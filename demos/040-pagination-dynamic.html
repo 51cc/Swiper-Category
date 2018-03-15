@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../dist/css/swiper.min.css">
+  <style media="screen">
+    .swiper-pagination-bullet-active{
+      background: red;
+    }
+  </style>
+</head>
+<body style="margin:0;background:#eee;">
+  <!-- Swiper -->
+  <div class="swiper-container" style="width:318px;height:174px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="text-align: center;background:white;display:flex;flex-wrap:wrap;justify-content:flex-start;">
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/01.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类1</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/02.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类2</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/03.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类3</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/04.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类4</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/05.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类5</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/06.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类6</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/07.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类7</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;flex:1;">
+            <img src="./cImg/08.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类8</span>
+          </div>
+      </div>
+      <div class="swiper-slide" style="text-align: center;background:white;display:flex;flex-wrap:wrap;justify-content:flex-start;">
+          <div style="width:79.5px;height:79.5px;">
+            <img src="./cImg/01.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类9</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;">
+            <img src="./cImg/02.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类10</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;">
+            <img src="./cImg/03.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类11</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;">
+            <img src="./cImg/04.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类12</span>
+          </div>
+          <div style="width:79.5px;height:79.5px;">
+            <img src="./cImg/05.png" style="width:45px;height:45px;margin:7.5px 17.25px 0 17.25px;">
+            <span style="width:79.5px;height:14px;font-size:10px;text-align:center;color:#444444;">分类13</span>
+          </div>
+        </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        autoplay:true
+      },
+    });
+    swiper.autoplay.start();
+  </script>
+
+
+</body>
+</html>
